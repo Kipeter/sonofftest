@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="left|center_horizontal"
+        android:src="@mipmap/power_switch"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/deviceName_show"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+         />
+        <TextView
+            android:id="@+id/relayStatus_show"
+            android:layout_width="50dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right|center_horizontal">
+        <Button
+            android:id="@+id/setTime"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/settime" />
+        <Button
+            android:id="@+id/recycle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/recycle"/>
+    </LinearLayout>
+
+</LinearLayout>
